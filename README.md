@@ -34,6 +34,7 @@ O PicPeel utiliza a API remove.bg para oferecer a funcionalidade de remoção de
 ## 🔗 Links 
 
 - ✨ Experimente a ferramenta aqui: [Demo](https://picpeel.netlify.app/)
+- 🌐 Saiba mais sobre a API do remove.bg: [API](https://www.remove.bg/api)
 
 ## 💻 Tecnologias
 
