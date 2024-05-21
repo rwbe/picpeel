@@ -4,7 +4,7 @@
   <img src="public/PicPeel.png" alt="Logo" width="35%"/>
 </p>
 
-<h1 align="center">PicPeel - Image Background Removal</h1>
+<h1 align="center">PicPeel - Background Remover</h1>
 
 <div align="center">
   <strong>✂️ Remove the background from your images with a single click 🖼️</strong>
@@ -34,6 +34,7 @@ PicPeel utilizes the remove.bg API to provide the functionality of background re
 ## 🔗 Links 
 
 - ✨ Try the tool here: [Demo](https://picpeel.netlify.app/)
+- 🌐 Learn more about the remove.bg: [API](https://www.remove.bg/api)
 
 ## 💻 Technologies
 
