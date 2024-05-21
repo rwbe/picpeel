@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Branco */
+    --foreground: 220 15% 20%; /* Azul-cinza escuro */
+  
+    --card: 0 0% 98%; /* Quase branco */
+    --card-foreground: 220 15% 20%; /* Azul-cinza escuro */
+  
+    --popover: 0 0% 98%; /* Quase branco */
+    --popover-foreground: 220 15% 20%; /* Azul-cinza escuro */
+  
+    --primary: 240 100% 70%; /* Light blue */
+    --primary-foreground: 240 100% 10%; /* Dark blue */
+  
+    --secondary: 240 100% 95%; /* Azul muito claro */
+    --secondary-foreground: 220 15% 20%; /* Azul-cinza escuro */
+  
+    --muted: 0 0% 94%; /* Cinza claro */
+    --muted-foreground: 220 15% 40%; /* Azul-cinza médio */
+  
+    --accent: 290 100% 75%; /* Roxo claro */
+    --accent-foreground: 0 0% 98%; /* Quase branco */
+  
+    --destructive: 0 84.2% 60.2%; /* Vermelho vivo */
+    --destructive-foreground: 0 0% 98%; /* Quase branco */
+  
+    --border: 0 0% 85%; /* Cinza claro */
+    --input: 0 0% 85%; /* Cinza claro */
+    --ring: 220 100% 50%; /* Azul brilhante */
+  
+    --radius: 0.5rem; /* Raio de borda padrão */
+  }  
+
+  .dark {
+    --background: 220 15% 15%; /* Azul-cinza escuro */
+    --foreground: 0 0% 98%; /* Quase branco */
+  
+    --card: 220 15% 18%; /* Azul-cinza um pouco mais claro */
+    --card-foreground: 0 0% 98%; /* Quase branco */
+  
+    --popover: 220 15% 20%; /* Azul-cinza mais claro */
+    --popover-foreground: 0 0% 98%; /* Quase branco */
+  
+    --primary: 240 100% 70%; /* Azul claro */
+    --primary-foreground: 240 100% 10%; /* Azul escuro */
+  
+    --secondary: 270 50% 50%; /* Roxo médio */
+    --secondary-foreground: 0 0% 98%; /* Quase branco */
+  
+    --muted: 220 15% 30%; /* Azul-cinza suave */
+    --muted-foreground: 0 0% 80%; /* Cinza claro */
+  
+    --accent: 290 100% 50%; /* Roxo brilhante */
+    --accent-foreground: 0 0% 98%; /* Quase branco */
+  
+    --destructive: 0 100% 50%; /* Vermelho brilhante */
+    --destructive-foreground: 0 0% 98%; /* Quase branco */
+  
+    --border: 220 15% 25%; /* Azul-cinza de borda */
+    --input: 220 15% 25%; /* Azul-cinza de entrada */
+    --ring: 240 100% 50%; /* Anel ciano */
+  }  
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+
+  /* FONT SIZES */
+  .h1 {
+		@apply text-5xl lg:text-6xl font-bold;
+	}
+	.h2 {
+		@apply sm:text-3xl text-4xl font-bold;
+	}
+	.h3 {
+		@apply text-2xl font-medium;
+	}
+	.h4 {
+		@apply text-xl sm:text-lg font-normal;
+	}
+
+  /* LAYOUTS  */
+	.layout-container {
+		@apply container mx-auto px-5  max-w-7xl;
+	}
+
+	.page-container {
+		@apply layout-container py-20 flex flex-col gap-16;
+	}
+  
+  .bg-transparent-pattern {
+    background: repeating-conic-gradient(
+      rgba(204, 204, 204, 0.5) 0% 25%, rgba(255, 255, 255, 0.5) 0% 50%
+    ) 0% 0% / 20px 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover-text:hover .bg-transparent-pattern {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .before-after-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .before-image,
+  .after-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: transparent;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    cursor: ew-resize;
+    border: 2px solid #000000;
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    cursor: ew-resize;
+    border: 2px solid #000000;
+    border-radius: 50%;
+  }
+}
