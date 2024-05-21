@@ -29,8 +29,7 @@ O PicPeel utiliza a API remove.bg para oferecer a funcionalidade de remoção de
 - A imagem processada é então retornada ao PicPeel, onde o usuário pode visualizar e baixar a foto sem fundo.
 
 > [!IMPORTANT]
-> - A API remove.bg oferece um número limitado de remoções de fundo gratuitas por mês. Após atingir esse limite, é necessário adquirir créditos adicionais para continuar utilizando o serviço.
-- Para usar a API no ambiente de desenvolvimento, você precisará de uma chave API válida. Inclua sua chave API no arquivo `.env` seguindo o exemplo fornecido em `.env.example`.
+> A API remove.bg oferece um número limitado de remoções de fundo gratuitas por mês. Após atingir esse limite, é necessário adquirir créditos adicionais para continuar utilizando o serviço. Para usar a API no ambiente de desenvolvimento, você precisará de uma chave API válida. Inclua sua chave API no arquivo `.env` seguindo o exemplo fornecido em `.env.example`.
 
 ## 🔗 Links 
 
