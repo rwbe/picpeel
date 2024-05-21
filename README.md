@@ -4,7 +4,7 @@
   <img src="public/PicPeel.png" alt="Logo" width="35%"/>
 </p>
 
-<h1 align="center">PicPeel - Remoção de Fundo de Imagens</h1>
+<h1 align="center">PicPeel - Remoção de Fundos</h1>
 
 <div align="center">
   <strong>✂️ Remova o fundo das suas imagens com um clique 🖼️</strong>
